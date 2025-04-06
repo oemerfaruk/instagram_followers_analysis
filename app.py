@@ -1,7 +1,7 @@
 import json
 
 # read JSON File
-with open("following.json", "r", encoding="utf-8") as file:
+with open("data/following.json", "r", encoding="utf-8") as file:
     data = json.load(file)
 
 # collect all "value" (usernames) values from following.json
@@ -12,7 +12,7 @@ for item in data.get("relationships_following", []):
 
 
 # read JSON File
-with open("followers_1.json", "r", encoding="utf-8") as file:
+with open("data/followers_1.json", "r", encoding="utf-8") as file:
     data = json.load(file)
 
 # collect all "value" (usernames) values from followers_1.json
